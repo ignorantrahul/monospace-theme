@@ -64,3 +64,4 @@ yarn.lock
 .serverless/
 .fusebox/
 .dynamodb/
+monospace-theme-1.0.0.vsix
