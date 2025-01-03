@@ -1,0 +1,58 @@
+{
+  "name": "monospace-theme",
+  "displayName": "monospace-theme",
+  "description": "Monospace theme is a sleek, versatile, and developer-centric VSCode theme designed to amplify your coding experience. Inspired by the mysteries of Dark Matter and the boundless energy of the cosmos, Monospace theme offers two meticulously crafted modes: Light, and Dark and file icon theme.",
+  "version": "1.0.0",
+  "publisher": "IgnorantRahul",
+  "author": {
+    "name": "IgnorantRahul",
+    "email": "ignorantrahul@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ignorantrahul/Monospace-Theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ignorantrahul/Monospace-Theme/issues"
+  },
+  "homepage": "https://github.com/ignorantrahul/Monospace-Theme#readme",
+  "license": "MIT",
+  "keywords": [
+    "theme",
+    "dark theme",
+    "light theme",
+    "icon theme"
+  ],
+  "engines": {
+    "vscode": "^1.43.0"
+  },
+  "contributes": {
+    "themes": [
+      {
+        "label": "Monospace Light",
+        "uiTheme": "vs",
+        "path": "./themes/monospace-light.json"
+      },
+      {
+        "label": "Monospace Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/monospace-dark.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "label": "Monospace",
+        "id": "monospace",
+        "path": "./themes/monospace-file-icon-theme.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@vscode/vsce":"^3.2.1"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish",
+    "prepare-release": "npm run test && npm run build && npm run package"
+  }
+}
